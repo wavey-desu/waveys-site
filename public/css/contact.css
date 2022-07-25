@@ -1,0 +1,222 @@
+
+.contactPage{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+}
+.input-title{
+    position: absolute;
+    font-size: 6rem;
+    left: 3rem;
+}
+/* //////input section////////////// */
+.submit-form{
+    position: relative;
+    width: 70vw;
+    height: 60vh;
+    top: 10rem;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    row-gap: 1rem;
+}
+.input-section{
+    position: absolute;
+    width: 35vw;
+    height: 60vh;
+    top: 0;
+    left: 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+.input-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 0;
+}
+label{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+}
+input{
+    appearance: none;
+    background-color: transparent;
+    background-image: linear-gradient(140deg, rgba(2,65,247,.6) 6%, rgba(88,5,242,.6) 18%, rgba(153,27,210,.6) 38%, hsla(0, 0%, 0%, 0) 60%);
+    background-size: 250%;
+    background-position-x: right;
+    width: 60%;
+    height: 50%;
+    color: #cccccc;
+    font-size: 2rem;
+    padding: .5rem;
+    border: none;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgba(2,65,247,1) 16%, rgba(88,5,242,1) 48%, rgba(153,27,210,1) 88%);
+    border-radius: 10px;
+    transition: 
+    background-position-x .5s;
+
+}
+
+input:focus, input:valid{
+    background-position-x: 20%;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+.description-cont{
+    width: 60%;
+}
+textarea{
+    appearance: none;
+    background-color: transparent;
+    background-image: linear-gradient(270deg, rgba(2,65,247,.6) 6%, rgba(88,5,242,.6) 18%, rgba(153,27,210,.6) 38%, hsla(0, 0%, 0%, 0) 60%);
+    background-size: 250%;
+    background-position-x: left;
+    width: 85%;
+    height: 42.5%;
+    color: #cccccc;
+    font-size: 2rem;
+    padding: .5rem;
+    border: none;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgba(2,65,247,1) 16%, rgba(88,5,242,1) 48%, rgba(153,27,210,1) 88%);
+    border-radius: 10px;
+    transition: 
+    background-position-x .5s;
+}
+textarea:focus, textarea:valid{
+    background-position-x: 85%;
+
+}
+.contactPage button {
+    position: absolute;
+    left: 20rem;
+    top: 18rem;
+    align-items: center;
+    z-index: 2;
+    background-image: linear-gradient(90deg, rgba(2,65,247,1) 20%, rgba(88,5,242,1) 40%, rgba(153,27,210,1) 68%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(14, 14, 14, 0.2) 0 15px 30px -5px;
+    color: #cccccc;
+    display: flex;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.3rem;
+    justify-content: center;
+    line-height: 1rem;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+   }
+   
+   button:active,
+   button:hover {
+    outline: 0;
+   }
+   
+   button span {
+    background-color: #242424;
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+   }
+   
+   button:hover span {
+    background: none;
+   }
+   
+   button:active {
+    transform: scale(0.9);
+   }
+/*/////////// mailto link///////////// */
+.mailto-link{
+    position: absolute;
+    overflow: visible;
+    right: 20rem;
+    top: 8rem;
+    text-decoration: none;
+    width: 10rem;
+    text-align: center;
+}
+.mailto-btn{
+    background: linear-gradient(180deg, rgba(2,65,247,1) 16%, rgba(88,5,242,1) 48%, rgba(153,27,210,1) 88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 150%;
+    background-position-y: top;
+    position: absolute;
+    font-size: 20rem;
+    transition: background-position .5s;
+}
+.mailto-link:hover .mailto-btn{
+    background-position: bottom;
+}
+.email-me{
+    position: absolute;
+    font-family: 'Righteous', sans-serif;
+    width: 15rem;
+    top: 5rem;
+    left: 7.5rem;
+    color: #cccccc;
+    font-size: 3.5rem;
+    z-index: 1;
+    transform-origin: 50% 10%;
+    transition: transform .3s;
+}
+.mailto-link:hover .email-me{
+    transform: rotateX(90deg);
+}
+.email-icon{
+    position: absolute;
+    font-size: 10rem;
+    z-index: 1;
+    top: 4.5rem;
+    left: 9rem;
+    color: #cccccc;
+    transform-origin: 50% 120%;
+    transform: rotateX(90deg);
+    transition: transform .3s;
+}
+.mailto-link:hover .email-icon{
+    transform: rotateX(0deg);
+}
+/* //////////links container////////// */
+
+.link-cont{
+    text-decoration: none;
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    width: 40vw;
+    height: 7vh;
+    left: 30%;
+    top: 90%;
+    border-radius: 30px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.link-cont a{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 1rem;
+}
