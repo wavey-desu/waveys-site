@@ -377,7 +377,10 @@
 .visit:active {
     transform: scale(0.9);
 }
-
+.visitAnchor{
+    text-decoration: none;
+    color: #cccccc;
+}
 /*//// SPENDER BUDDY CARD /////*/
 .spender-buddy-card {
     transform-origin: 150% 50%;

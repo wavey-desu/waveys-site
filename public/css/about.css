@@ -255,7 +255,7 @@
 }
 .img-container > .svg-wrapper:nth-of-type(3){ 
     position: absolute;
-    top: -2.8rem;
+    bottom: 16.7rem;
     left: 8rem;
 
 }

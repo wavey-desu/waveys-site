@@ -12,11 +12,14 @@
 .homePage h2{
   font-family: 'Righteous', sans-serif;
 }
-/* *{
-  animation-delay: .1s !important;
-} */
+
 /* navbar animate */
 nav ul {
+  transform-origin: 50% 150%;
+  transform: rotateX(90deg);
+  animation: rotate-in .8s ease-out 12s forwards; 
+}
+.logo-nav{
   transform-origin: 50% 150%;
   transform: rotateX(90deg);
   animation: rotate-in .8s ease-out 12s forwards; 
@@ -136,6 +139,10 @@ span .dot{
     blink 900ms steps(13) infinite;
 }
 
+footer{
+  opacity: 0;
+  animation: load-fade .8s ease 12s forwards;
+}
 
 /* keyframes */
 @keyframes slide-in{
