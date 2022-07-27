@@ -71,26 +71,26 @@ h1{
   overflow: hidden;
   position: absolute;
   bottom:32%;
-  left: 26.2%;
+  left: 25.8%;
   background-color: var(--bg-1);
   /* background-color: black; */
   width: 40%;
   height: 78%;
   border-radius: 40%;
-  animation: filling 10s ease-in-out forwards ;
+  animation: filling 12s ease-in-out forwards ;
 }
 .filler::before{
    content: "";
   overflow: hidden;
   position: absolute;
   bottom: 34%;
-  left:32%;
+  left:33%;
   background-color: var(--bg-1);
   /* background-color: black; */
   width: 40%;
   height: 78%;
   border-radius: 40%;
-  animation: filling 10s ease-in-out forwards ;
+  animation: filling 12s ease-in-out forwards ;
 }
 
 header {
