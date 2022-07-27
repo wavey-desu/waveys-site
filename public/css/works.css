@@ -69,7 +69,7 @@
 
 .works-info-cont i {
     font-size: 7rem;
-    animation: jiggle 1.5s 5s 3;
+    animation: jiggle 1.5s 2.5s 3;
 }
 
 .works-info-cont img {
@@ -119,7 +119,7 @@
 }
 
 .mongodb {
-    animation: jiggle 1.5s 5s 3;
+    animation: jiggle 1.5s 2.5s 3;
 }
 
 .others {
