@@ -2,28 +2,34 @@
     overflow: hidden;
     background: linear-gradient(105deg, rgba(36,36,36,1) 40%, rgba(20,20,20,1) 50%);
 }
+.about{
+    font-size: 1.5rem;
+}
 .aboutPage h2{
-    position: absolute;
-    top: .3rem;
-    left: 10%;
-    font-size: 4rem;
+    position: relative;
+    /* top: .3rem;
+    left: 10%; */
+    font-size: 3.5vw;
     font-family: 'Righteous', sans-serif;   
 }
 .aboutPage .section p{
     font-family: 'Montserrat Alternates', sans-serif; 
+    font-size: 1.5vw;
 }
 .aboutPage img:hover{
     filter: brightness(40%);
 }
-.about{
-    font-size: 1.5rem;
-}
 
 .wrapper{
     position: absolute;
-    top: 10%;
     left: 0;
     width: 50vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.8rem;
     
 }
 .aboutPage img{
@@ -32,36 +38,53 @@
 /*///////////////////////// text sections ////////////////////////////*/
 
 .section{
-    position: absolute;
-    height: 5rem;
-    left: 3.75rem;
+    position: relative;
+    height: 12%;
+    width: 92.5%;
     padding-left: 1rem;
     padding-top: .4rem;
     padding-right: 3rem;
-    width: 92.5%;
 }
 
-.section:nth-child(1){
-    top: 2rem;
-   
+/*/////// text section svgs/////////// */
+.section > .svg-wrapper{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+    width: 95%;
+    height: 100%;
 }
-.section:nth-child(2){
-    top: 8rem;
+.section > .svg-wrapper > .svg-border{
+    fill: transparent;
+    width: 100%;
+    height: 100%;
+    stroke-width: 1%;
+    stroke-dasharray: 0 315%;
+    stroke-dashoffset: -305%; 
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    transition: 
+        stroke-dashoffset 1s ease-in-out,
+        stroke-dasharray 1s ease-in-out,
+        stroke .1s;
 
 }
-.section:nth-child(3){
-    top: 14rem;
-}
-.section:nth-child(4){
-    top: 20rem;
-   
-}
-.section:nth-child(5){
-    top: 26rem;
-   
-}
 
-
+.section > .svg-wrapper:hover .svg-border{
+    stroke-dasharray: 315%;
+    stroke-dashoffset: 0;
+}
+.dot{
+    position: absolute;
+    z-index: -1;
+    r: 1.7%;
+    transition: r 1s;
+}
+.section > .svg-wrapper:hover .dot{
+    r: 0;
+}
+/*///////////////////////// text sections ////////////////////////////*/
 
 /*////////////////////// Media Container /////////////////////////////*/
 
@@ -69,415 +92,326 @@
     position: absolute;
     left: 50%;
     height: 90vh;
+    width: 50vw;
 }
 
-.img-container{
-    position: absolute;
-    left: 15.85%;
-    top: 15.6%;
-    width: 40vw;
-    height: 75vh;
-}
-.img-wrapper{
-    position: absolute;
-    width: 19.5rem;
-
-}
 /* section-1-imgs */
 .wvy-img1{
-    position: relative;
-    width: 19.78rem;
-    height: 15rem;
-
+    position: absolute;
+    width: 45%;
+    height: 40%;
 }
 .wvy-img1:nth-of-type(1){
-    left: -.127rem;
-    top: -.2rem;
+    left: 7.5%;
+    top: 7.5%;
 }
 .wvy-img1:nth-of-type(2){
-    position: absolute;
-    top: 17.25rem;
-    left: 20.9rem;
+    right: 7.5%;
+    bottom: 7.5%;
 }
-/* section-3-imgs */
+
+
+/* section-2-imgs */
 .wvy-img2{
     position: absolute;
-    width: 30rem;
-    height: 20rem;
-    bottom: 16.85rem;
-    left: 8.15rem;
+    width: 70%;
+    height: 55%;
+    top: 2.5%;
+    left: 15%;
     z-index: 1;
 
 }
 .mcfc{
-    position: absolute;
-    width: 14.7rem;
-    height: 14.7rem;
-    top: 54%;
-    left: 41.3%;
+    width: 33%;
+    height: 38.5%;
+    top: 58.8%;
+    left: 33.5%;
 }
 
-/* section-4-imgs */
-.twitch-logo{
-    position: absolute;
-    left: 11rem;
-    bottom: 22.5rem;
+/* section-3-imgs */
 
-}
-.paths{
-    fill: transparent;
+.wvy-img3{
+    position: absolute;
+    width: 42.5%;
+    height: 34%;
+    bottom: 15%;
 }
 
 .league{
-    position: absolute;
-    width: 19.8rem;
-    height: 12.5rem;
-    top: 15rem;
-    left: .9rem;
+    left: 3.5%;
 }
 .tarkov{
-    position: absolute;
-    width: 19.78rem;
-    height: 12.55rem;
-    top: 14.95rem;
-    left: 25.8rem;
+    right: 3.5%;
 }
 
-/* section 5 imgs */
-.luffy{
+/* section 4 imgs */
+.wvy-img4{
     position: absolute;
-    width: 14.65rem;
-    height: 22.35rem;
-    right: -4.75rem;
-    top: 2.5rem;
+    width: 50%;
+    height: 35%;
+    left: 2%;
 }
 .kimetsu{
-    position: absolute;
-    width: 19.8rem;
-    height: 12.3rem;
-    left: .85rem;
-    top: 0;
+    top: 10%;
 }
 .shigatsu{
-    position: absolute;
-    width: 19.8rem;
-    height: 12.4rem;
-    left: .85rem;
-    top: 14.9rem;
+    bottom: 10%;
+}
+.luffy{
+    width: 35%;
+    height: 60%;
+    left: 60%;
+    top: 20%;
 }
 
-/* section 6 images */
-.tacos1{
+/* section 5 images */
+.wvy-img5{
     position: absolute;
-    width: 26rem;
-    height: 17rem;
-    left: 17.8rem;
-    bottom: 21.6rem;
+    width: 52.5%;
+    height: 42.5%;
+}
+.tacos1{
+    right: 3.5%;
+    top: 5%;
 }
 .tacos2{
-    position: absolute;
-    width: 26rem;
-    height: 16.9rem;
-    left: .85rem;
-    top: 16.4rem;
+    left: 3.5%;
+    bottom: 5%;
 }
 
-/*////////////////////////////// svgs ////////////////////////////////*/
-
-/*/////// text section svgs/////////// */
-.section > .svg-wrapper{
-    z-index: 1;
-    position: absolute;
-    right: 1.7rem;
-    top: -.17rem;    
-}
-.section > .svg-wrapper > .svg-border{
-    fill: transparent;
-    stroke-width: 5px;
-    stroke-dasharray: 0 1500;
-    stroke-dashoffset: -1499; 
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    transition: 
-        stroke-dashoffset 2s ease-in-out,
-        stroke-dasharray 2s ease-in-out,
-        stroke .1s;
-
-}
-
-.section > .svg-wrapper:hover .svg-border{
-    stroke-dashoffset: 0;
-    stroke-dasharray: 1600;
-    /* stroke: url('#myGradient'); */
-
-}
-
-/*///////////// img-svgs /////////////*/
-.img-container > .svg-wrapper{
+/*///////////// IMG-SVGs /////////////*/
+.media-container > .svg-wrapper{
     position: absolute;
     overflow: visible;
+    fill: none;
 }
-.img-container .svg-border{
-    stroke-width: 5px;
+.media-container  .svg-border{
     stroke-linejoin: round;
     stroke-linecap: round;
-
+    z-index: 1;
+    stroke-width: 2%;
+    transition: stroke-dashoffset 1s ease-out;
+    fill: none;
 }
 /* section1 */
-.img-container > .svg-wrapper:nth-of-type(1){
-    position: absolute;
-    left: -5px;
-    top: -5px;
-    overflow: visible;
-    stroke: 2px;
-
+.s1-wrapper{
+    width: 46%;
+    height: 41%;
 }
-.img-container > .svg-wrapper:nth-of-type(2){
-    position: absolute;
-    top: 17.125rem;
-    left: 20.688rem;
 
+.s1-wrapper:nth-of-type(1){
+    left: 7%;
+    top: 7%;
+}
+.s1-wrapper:nth-of-type(2){
+    right: 7%;
+    bottom: 7%;
 }
 .s1-img-border{
+    width: 100%;
+    height: 100%;
     fill: transparent;
-    stroke-width: 10px;
-    stroke-dasharray: 1134;
-    stroke-dashoffset: 1134; 
+    stroke-dasharray: 400%;
+    stroke-dashoffset: 400%; 
 }
 
 /* section 2 */
-.s3-img-border{
-    fill: transparent;
-    stroke-width: 10px;
-    stroke-dasharray: 1620;
-    stroke-dashoffset: 1620; 
-    z-index: 1;
+.s2-wrapper{
+    width: 71.5%;
+    height: 56.5%;
+    top: 1.75%;
+    left: 14.25%;
 }
-.img-container > .svg-wrapper:nth-of-type(3){ 
-    position: absolute;
-    bottom: 16.7rem;
-    left: 8rem;
+.s2-img-border{
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 400%;
+    stroke-dashoffset: 400%;     
+}
 
-}
 .circle-wrapper{
-    position: absolute;
-    top: 6.6rem;
-    left: 8rem;
+    width: 34.5%;
+    height: 35%;
+    top: 60.75%;
+    left: 32.75%;
 }
 .logo-border{
-    position: absolute;
     fill: transparent;
-    stroke-width: 1px !important; 
-    stroke-dasharray: 126;
-    stroke-dashoffset: 126; 
-    z-index: 0;
-
+    r:52%;
+    stroke-dasharray: 333%;
+    stroke-dashoffset: 333%; 
 }
 /* section 3 */
-.path-1{
-    stroke-width: 1.5px !important;
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-}
-.img-container > .svg-wrapper:nth-of-type(6){ 
+.twitch-wrapper{
     position: absolute;
-    top: 14.8rem;
-    left: 0.7rem;
-
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 0;
+    fill: none;
+    overflow: visible;
+    z-index: 1;
 }
-.img-container > .svg-wrapper:nth-of-type(7){ 
+.twitch-border{
     position: absolute;
-    top: 14.8rem;
-    left: 25.6rem;
-
+    stroke-width: 1.5px !important; 
+    stroke-dasharray: 275%;
+    stroke-dashoffset: 275%;
 }
-.s4-img-border{
+.paths{
+    transition: fill 1s ease;
+}
+.path-purple{
+    fill: #8343c8;
     fill: transparent;
-    stroke-width: 10px;
-    stroke-dasharray: 1100;
-    stroke-dashoffset: 1100; 
 }
+.path-white{
+    fill: #fafafa;
+    fill: transparent;
+}
+
+.s3-wrapper{
+    width: 43.4%;
+    height: 34.8%;
+    bottom: 14.7%;
+}
+.s3-wrapper1{
+    left: 3.1%;
+}
+.s3-wrapper2{
+    right: 3.1%;
+}
+.s3-img-border{ 
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 400%;
+    stroke-dashoffset: 400%;
+}
+
 
 /* section 4 */
-.s5-img-border{
-    fill: transparent;
-    stroke-width: 5px !important;
-    stroke-dasharray: 1250;
-    stroke-dashoffset: 1250; 
+.s4-wrapper{
+    width: 51%;
+    height: 36%;
+    left: 1.5%;
 }
-.img-container > .svg-wrapper:nth-of-type(8){ 
-    position: absolute;
-    top: -0.3rem;
-    left: .7rem;
-
+.s4-wrapper1{
+    top: 9.5%;
 }
-.img-container > .svg-wrapper:nth-of-type(9){ 
-    position: absolute;
-    top: 14.7rem;
-    left: .7rem;
-
+.s4-wrapper2{
+    bottom: 9.5%;
 }
-.img-container > .svg-wrapper:nth-of-type(10){ 
-    position: absolute;
-    top: 2.3rem;
-    left: 28.2rem;
-
+.s4-wrapper3{
+    width: 36%;
+    height: 61%;
+    left: 59.5%;
+    top: 19.5%;
+}
+.s4-img-border{
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 400%;
+    stroke-dashoffset: 400%;
 }
 
 /* section 5 */
-.s6-img-border{
-    fill: transparent;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500; 
+.s5-wrapper{
+    width: 53.5%;
+    height: 43.5%;
 }
-
-.img-container > .svg-wrapper:nth-of-type(11){ 
-    position: absolute;
-    bottom: 21.5rem;
-    left: 17.6rem;
-
+.s5-wrapper1{
+    right: 3%;
+    top: 4.5%;
 }
-.img-container > .svg-wrapper:nth-of-type(12){ 
-    position: absolute;
-    left: .665rem;
-    top: 16.27rem;
-
+.s5-wrapper2{
+    left: 3%;
+    bottom: 4.5%;
+}
+.s5-img-border{
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 400%;
+    stroke-dashoffset: 400%;
 }
 
 /*//////////////// img subtext-on hover animation //////////////////////*/
 
-.img-sub:nth-of-type(1){
-    font-size: 6rem;
-    top: -8rem;
-    z-index: 3;
+.img-sub{
+    font-family: 'Righteous', sans-serif;   
+    position: absolute;
+    font-size: 10vh;
+    z-index: 2;
+    white-space: nowrap;
+    transform-origin: 50% 90%;
+    transform: rotateX(90deg);
+    transition: transform .3s ease-out;
+  }
+  .aboutPage img:hover+.img-sub{
+    transform: rotateX(0deg)
+  }
+  .img-sub:hover{
+    transform: rotateX(0deg);
+    cursor: default;
+  }
 
+.img-sub:nth-of-type(1){
+    top: 33%;
+    left: 8%;
 }
 .img-sub:nth-of-type(2){
-    font-size: 5rem;
-    width: 45%;
-    top: 4rem;
-    left: 22rem;
-    z-index: 3;
+    bottom: 6%;
+    right: 22%;
 }
 .img-sub:nth-of-type(3){
-    font-size: 4rem;
-    width: 95%;
-    left: 8.5rem;
-    bottom: 1rem;
-    z-index: 3;
-      
+    font-size: 8.5vh;
+    left: 18%;
+    bottom: 42%;      
 }
 .img-sub:nth-of-type(4){
-    font-size: 3rem;
-    width: 40%;
-    left: 16rem;
-    top: 5rem;
+    font-size: 6vh;
+    left: 36%;
+    bottom: 19%;
       
 }
 .img-sub:nth-of-type(5){
-    position: absolute;
-    left: 2rem;
-    bottom: 8rem;
+    left: 12.5%;
+    bottom: 15%;
       
 }
 .lomegalull{
-    width: 35%;
+    width: 14vw;
 }
 .img-sub:nth-of-type(6){
-    font-size: 3rem;
-    width: 65%;
-    left: 26.5rem;
-    bottom: -1rem;
-      
+    font-size: 7vh;
+    right: 6%;
+    bottom: 15%;
 }
 .img-sub:nth-of-type(7){
-    bottom: 17rem;
-    font-size: 3rem;
-    width: 70%;
-    left: 1rem;
-      
+    font-size: 3.5vw;
+    top: 35%;
+    left: 5%;
 }
 .img-sub:nth-of-type(8){
-    bottom: 5.5rem;
-    font-size: 2.6rem;
-    width: 70%;
-    left: 1.4rem;
+    font-size: 3vw;
+    bottom: 10%;
+    left: 5%;
       
 }
 .img-sub:nth-of-type(9){
-    bottom: 12rem;
-    font-size: 3rem;
-    width: 40%;
-    left: 28.7rem;
+    font-size: 3.5vw;
+    bottom: 20%;
+    right: 6.5%;
       
 }
 .img-sub:nth-of-type(10){
-    bottom: 28rem;
-    left: 18rem;
+    top: 32.5%;
+    right: 10%;
 }
 .img-sub:nth-of-type(11){
-    width: 90%;
-    font-size: 3.5rem;
-    bottom: 11rem;
-    left: 1rem;
+    font-size: 3.5vw;
+    bottom: 5%;
+    left: 5%;
 }
 
-/* ///////dots/////////// */
-.dot{
-    z-index: -1;
-    transition: 
-    r 2s;
-}
-.section > .svg-wrapper:hover .dot{
-    r: 0;
-}
 
-/*////////////////////////// keyframes ////////////////////////////////*/
-@keyframes main-in{  
-  100%{ stroke-dashoffset: 0;}
-}
 
-@keyframes main-out{
-    from{ stroke-dashoffset: 0;}
-    to{ stroke-dashoffset: 1542;}
-}
-
-@keyframes main-in-color{
-    to{stroke: #101010;}
-}
-
-@keyframes img-1-out {
-    from{stroke-dashoffset: 0;}
-    to{stroke-dashoffset: 1134;}
-    
-}
-
-@keyframes img-3-1-out {
-    from{stroke-dashoffset: 0;}
-    to{stroke-dashoffset: 1620;}
-    
-}
-@keyframes img-3-2-out {
-    from{stroke-dashoffset: 0;}
-    to{stroke-dashoffset: 126;}
-    
-}
-@keyframes path-purple-in{
-    to{ fill: #8343c8;}
-}
-@keyframes path-white-in{
-    to {fill: #fafafa;}
-}
-
-@keyframes paths-out{
-    from{fill: currentColor;}
-    to {fill- : 100;}
-}
-@keyframes img-5-out{
-    from{stroke-dashoffset: 0;}
-    to{stroke-dashoffset: 1250;}
-}
-@keyframes stroke-to-white{
-    from{}
-    to{stroke: #cccccc;}
-}

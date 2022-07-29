@@ -8,7 +8,7 @@ $(document).ready(function(){
             end: "450 50",
             scrub: 1
         },
-        fontSize: 120,
+        fontSize: "8vw",
     });
 
     gsap.from(".spender-buddy-card", {
@@ -61,7 +61,7 @@ $(".category").hide();
 // descriptoin hover animations//
 $(".title").mouseover( function(){
     timer1 = setTimeout(()=>{
-        $(".desc-border").css({"height":" 20rem","width":" 17rem"});
+        $(".desc-border").css({"height":" 100%","width":" 100%"});
         $(".desc-text").delay(1000).slideDown(500,'swing')
         
     },500)

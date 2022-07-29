@@ -5,20 +5,20 @@
 }
 .input-title{
     position: absolute;
-    font-size: 6rem;
-    left: 3rem;
+    font-size: 6.5vw;
+    left: 2.5%;
 }
 /* //////input section////////////// */
 .submit-form{
-    position: relative;
+    position: absolute;
     width: 70vw;
     height: 60vh;
-    top: 10rem;
+    top: 25%;
     left: 0%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    row-gap: 1rem;
+    row-gap: 5%;
 }
 .input-section{
     position: absolute;
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 5%;
 
 }
 .input-cont{
@@ -41,8 +41,8 @@
 }
 label{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 0rem;
+    font-size: 3vw;
+    margin-bottom: 0;
 }
 input{
     appearance: none;
@@ -53,8 +53,8 @@ input{
     width: 60%;
     height: 50%;
     color: #cccccc;
-    font-size: 2rem;
-    padding: .5rem;
+    font-size: 2vw;
+    padding: 1.7%;
     border: none;
     border-bottom: 2px solid;
     border-image-slice: 1;
@@ -83,8 +83,8 @@ textarea{
     width: 85%;
     height: 42.5%;
     color: #cccccc;
-    font-size: 2rem;
-    padding: .5rem;
+    font-size: 2vw;
+    padding: 1%;
     border: none;
     border-bottom: 2px solid;
     border-image-slice: 1;
@@ -99,8 +99,8 @@ textarea:focus, textarea:valid{
 }
 .contactPage button {
     position: absolute;
-    left: 20rem;
-    top: 18rem;
+    left: 30%;
+    bottom: 15%;
     align-items: center;
     z-index: 2;
     background-image: linear-gradient(90deg, rgba(2,65,247,1) 20%, rgba(88,5,242,1) 40%, rgba(153,27,210,1) 68%);
@@ -110,12 +110,11 @@ textarea:focus, textarea:valid{
     color: #cccccc;
     display: flex;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1.3rem;
+    font-size: 2.2vw;
     justify-content: center;
-    line-height: 1rem;
+    line-height: 5%;
     max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
+    padding: .5%;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
@@ -132,7 +131,7 @@ textarea:focus, textarea:valid{
    
    button span {
     background-color: #242424;
-    padding: 16px 24px;
+    padding: 1vw 1.5vw;
     border-radius: 6px;
     width: 100%;
     height: 100%;
@@ -150,11 +149,15 @@ textarea:focus, textarea:valid{
 .mailto-link{
     position: absolute;
     overflow: visible;
-    right: 20rem;
-    top: 8rem;
+    right: 5%;
+    top: 22%;
+    width: 20vw;
+    height: 40vh;
     text-decoration: none;
-    width: 10rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mailto-btn{
     background: linear-gradient(180deg, rgba(2,65,247,1) 16%, rgba(88,5,242,1) 48%, rgba(153,27,210,1) 88%);
@@ -164,7 +167,7 @@ textarea:focus, textarea:valid{
     background-size: 200% 150%;
     background-position-y: top;
     position: absolute;
-    font-size: 20rem;
+    font-size: 20vw;
     transition: background-position .5s;
 }
 .mailto-link:hover .mailto-btn{
@@ -173,11 +176,9 @@ textarea:focus, textarea:valid{
 .email-me{
     position: absolute;
     font-family: 'Righteous', sans-serif;
-    width: 15rem;
-    top: 5rem;
-    left: 7.5rem;
+    bottom: 22%;
     color: #cccccc;
-    font-size: 3.5rem;
+    font-size: 4.5vw;
     z-index: 1;
     transform-origin: 50% 10%;
     transition: transform .3s;
@@ -186,11 +187,10 @@ textarea:focus, textarea:valid{
     transform: rotateX(90deg);
 }
 .email-icon{
-    position: absolute;
-    font-size: 10rem;
+    position: relative;
+    right: 5%;
+    font-size: 12vw;
     z-index: 1;
-    top: 4.5rem;
-    left: 9rem;
     color: #cccccc;
     transform-origin: 50% 120%;
     transform: rotateX(90deg);
@@ -218,5 +218,5 @@ textarea:focus, textarea:valid{
 .link-cont a{
     text-decoration: none;
     color: #cccccc;
-    font-size: 1rem;
+    font-size: 1vw;
 }

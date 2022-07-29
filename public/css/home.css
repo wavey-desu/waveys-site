@@ -38,11 +38,10 @@ nav ul {
 
  
 .hi{
-  font-size: 12rem;
-  position: relative;
+  position: absolute;
+  font-size: 14vw;
   left: 45%;
-  width: 30vw;
-  bottom: 1rem;
+  top: 1%;
   opacity: 0;
   animation: 
     load-fade 1.5s ease-in-out forwards, 
@@ -50,11 +49,10 @@ nav ul {
 }
  
 .imwvy{
-  font-size: 12rem;
-  position: relative;
-  left: 5rem;
-  bottom: 2rem;
-  width: 90vw;
+  position: absolute;
+  font-size: 14vw;
+  left: 6%;
+  top: 35%;
   opacity: 0;
 
   background-image: var(--linear-gradient);
@@ -63,8 +61,8 @@ nav ul {
   -webkit-background-clip: text;
 
   animation: 
-    bg-animation 25s ease-in-out infinite, 
-    load-fade 1.8s ease-out 3.8s forwards;
+  load-fade 1.8s ease-out 3.8s forwards,
+  bg-animation 25s ease-in-out infinite;
 
 }
 .wvy{
@@ -92,18 +90,18 @@ nav ul {
   transition: font-size 1s;
 }
 .letter:hover{
-  font-size: 13rem;
+  font-size: 15vw;
 }
 span .dot{
   color: transparent;
 }
 
 .wd{
-  position: relative;
+  position: absolute;
   font-family: 'Share Tech Mono', monospace;
-  left: 75rem;
-  font-size: 1.5rem;
-  bottom: 10%;
+  right: 1%;
+  bottom: 20%;
+  font-size: 2vw;
   width: max-content;
   opacity: 0;
   animation: 
@@ -174,11 +172,11 @@ footer{
 
 @keyframes hi-move{
   0% {left: 45%;}
-  100% { left: 4.5rem;}
+  100% { left: 5%;}
 }
 @keyframes wvy-breathin{
   0%{}
-  50%{color:transparent; font-size:13rem;}
+  50%{color:transparent; font-size:15vw;}
   100%{}
 }
 
