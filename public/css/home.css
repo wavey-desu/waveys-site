@@ -82,7 +82,7 @@ nav ul {
 } 
 .wvy:hover{
   color: transparent;
-  cursor: default;
+  cursor: help;
 }
 
 .letter{

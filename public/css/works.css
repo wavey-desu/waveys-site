@@ -68,10 +68,12 @@
 .works-info-cont:hover::after {
     opacity: 1;
 }
-
+.works-info-cont:hover{
+    cursor: help;
+}
 .works-info-cont i {
     font-size: 7vw;
-    animation: jiggle 1.5s 2.5s 3;
+    animation: jiggle 1.5s 2.5s 2;
 }
 
 .works-info-cont img {
@@ -120,12 +122,12 @@
     color: #83BA00;
 }
 
-.mongodb {
-    animation: jiggle 1.5s 2.5s 3;
+.react {
+    color: #00CDF2;
 }
 
 .others {
-    color: rgba(153, 27, 210, 1);
+    color: rgb(101, 26, 136);
 }
 
 
@@ -178,8 +180,11 @@
     left: 2%;
     top: 2%;
     white-space: nowrap;
+    text-shadow: .2vw .2vw .6vw #242424;
 }
-
+.title:hover{
+    cursor: help;
+}
 .description {
     position: absolute;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -256,7 +261,9 @@
     color: transparent;
     animation-play-state: paused;
 }
-
+.info-wrapper:hover{
+    cursor: help;
+}
 .i-wrapper-1 {
     fill: none;
     stroke-width: 7px;
@@ -367,13 +374,18 @@
     text-decoration: none;
     color: #cccccc;
 }
+
+/* /// COCKTAIL GENIE CARD /// */
+.cocktail-genie-card {
+    transform-origin: 150% 50%;
+    background-image: url(../resources/CG.png);
+}
 /*//// SPENDER BUDDY CARD /////*/
 .spender-buddy-card {
     transform-origin: 150% 50%;
     background-image: url(../resources/SBbg-1.png);
 }
 
-/*//// SPENDER BUDDY CARD /////*/
 
 /*//// WVYS PLAYGROUND CARD /////*/
 .wvy-playground-card{
@@ -381,10 +393,6 @@
     background-image: url(../resources/WPbg.png);
 }
 
-/* .wp-title{
-    width: 300%;
-} */
-/*//// WVYS PLAYGROUND CARD /////*/
 
 .itwCont{
     position: relative;
@@ -424,25 +432,25 @@
         transform: translate(0, 0) rotate(0deg);
     }
     5% {
-        transform: translate(2px, 2px) rotate(2deg);
+        transform: translate(1px, 1px) rotate(1deg);
     }
     10% {
         transform: translate(0, 0) rotate(0eg);
     }
     15% {
-        transform: translate(-2px, 2px) rotate(-2deg);
+        transform: translate(-1px, 1px) rotate(-1deg);
     }
     20% {
         transform: translate(0, 0) rotate(0deg);
     }
     25%{
-        transform: translate(2px, 2px) rotate(2deg);
+        transform: translate(1px, 1px) rotate(1deg);
     }
     30%{
         transform: translate(0, 0) rotate(0eg);
     }
     35%{
-        transform: translate(-2px, 2px) rotate(-2deg);
+        transform: translate(-1px, 1px) rotate(-1deg);
     }
     40%, 100%{
         transform: translate(0, 0) rotate(0eg);

@@ -11,7 +11,7 @@ $(document).ready(function(){
         fontSize: "8vw",
     });
 
-    gsap.from(".spender-buddy-card", {
+    gsap.from(".cocktail-genie-card", {
         scrollTrigger:{
             scroller: ".worksPage",
             // markers: true,
@@ -19,30 +19,46 @@ $(document).ready(function(){
             end: "900 50",
             toggleActions: "play none none reverse"
         },
-        rotateY: 90,
-        duration: 3,
-        ease: "back.out(1.7)",
+        x:" 20%",
+        opacity: 0,
+        duration: 1,
+        ease: "back.out(.7)",
+    });
+
+    gsap.from(".spender-buddy-card", {
+        scrollTrigger:{
+            scroller: ".worksPage",
+            // markers: true,
+            start: "1400 300",
+            end: "1500 50",
+            toggleActions: "play none none reverse"
+        },
+        x:" -20%",
+        opacity: 0,
+        duration: 1,
+        ease: "back.out(.7)",
     });
 
     gsap.from(".wvy-playground-card", {
         scrollTrigger:{
             scroller: ".worksPage",
             // markers: true,
-            start: "1300 300",
-            end: "1400 50",
+            start: "2000 300",
+            end: "2100 50",
             toggleActions: "play none none reverse"
         },
-        rotateY: 90,
-        duration: 3,
-        ease: "back.out(1.7)",
+        x:" 20%",
+        opacity: 0,
+        duration: 1,
+        ease: "back.out(.7)",
     });
 
     gsap.from(".itwCont", {
         scrollTrigger:{
             scroller: ".worksPage",
             // markers: true,
-            start: "2100 300",
-            end: "2150 50",
+            start: "2700 300",
+            end: "2850 50",
             toggleActions: "play none none reverse"
         },
         rotateX: 90,

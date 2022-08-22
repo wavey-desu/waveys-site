@@ -225,7 +225,9 @@ img{
   filter: brightness(100%);
   transition: filter .5s ease-out;
 }
-
+.hov:hover{
+  cursor: help;
+}
 footer{
   position: absolute;
   bottom: 1%;

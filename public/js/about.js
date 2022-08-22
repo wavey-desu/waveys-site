@@ -136,7 +136,7 @@ for (let i = 0; i < section.length; i++) {
                 setTimeout(() =>{
                     imgsIN(sNum);
                     $(section[i]).addClass('activeSection');
-                },1500)
+                },1800)
 
             }
             else{ //first load 
@@ -150,7 +150,7 @@ for (let i = 0; i < section.length; i++) {
                 $(section[i]).addClass('activeSection');
 
             }
-        }, 1200)
+        }, 1500)
     });
 
 

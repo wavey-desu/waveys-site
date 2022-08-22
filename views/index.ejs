@@ -56,7 +56,7 @@
       <!--------------- HOME PAGE BEGINS ------------------>
       <div class="homePage page loading">
         <h1 class="hi loading"> Hi.</h1>
-        <h1 class="imwvy loading">I'm <span class="wvy loading">
+        <h1 class="imwvy loading">I'm <span class="wvy loading hov">
             <span class="letter">w</span><span class="letter">a</span><span class="letter">v</span><span
               class="letter">e</span><span class="letter">y</span><span class=" dot">.</span></span></h1>
         <p class="wd loading"> >web developer</p>
@@ -73,14 +73,13 @@
           <h1>Tools of the Trade</h1>
           <div class="works-head-info">
 
-            <div class="works-info-cont">
+            <div class="works-info-cont hov">
               <i class="fa-brands fa-html5 html"></i>
               <h2>HTML</h2>
               <div class="works-info-extra">
                 <ul>
-                  <li>
-                    EJS
-                  </li>
+                  <li>EJS</li>
+                  <li>JSX</li>
                 </ul>
               </div>
             </div>
@@ -124,11 +123,12 @@
             </div>
 
             <div class="works-info-cont">
-              <img class="mongodb" src="resources/mongodb.png" alt="">
-              <h2>MongoDB</h2>
+              <i class="fa-brands fa-react react"></i>
+              <h2>ReactJS</h2>
               <div class="works-info-extra">
                 <ul>
-                  <li>Mongoose</li>
+                  <li>MaterialUI</li>
+                  <li>Custom Hooks</li>
                 </ul>
               </div>
             </div>
@@ -138,6 +138,7 @@
               <h2>Others..</h2>
               <div class="works-info-extra">
                 <ul>
+                  <li>MongoDB</li>
                   <li>API's</li>
                   <li>Git</li>
                   <li>Github</li>
@@ -152,6 +153,60 @@
           <i class="fa-solid fa-angles-down"></i>
           <h1 class="works-title">Projects</h1>
           <i class="fa-solid fa-angles-down"></i>
+        </div>
+
+        <div class="card-container">
+          <div class="card cocktail-genie-card">
+            <h1 class="title">Cocktail Genie</h1>
+            <div class="description card-text">
+              <p class="desc-text">Cocktail Genie is a React web app for searching and filtering cocktail recipes. Users can search by name, ingredients and alcoholic content</p>
+              <svg class="svg-wrapper desc-svg" overflow="visible"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="myGradient" gradientTransform="rotate(45)">
+                    <stop offset="15%" stop-color="rgba(2,65,247,1)" />
+                    <stop offset="55%" stop-color="rgba(88,5,242,1)" />
+                    <stop offset="95%" stop-color="rgba(153,27,210,1)" />
+                  </linearGradient>
+                </defs>
+                <rect class="svg-border desc-border " overflow="visible" width="180"
+                  fill="hsla(0, 0%, 0%, 0.8)" stroke="url('#myGradient')" />
+              </svg>
+            </div>
+
+
+            <div class="info-wrapper">
+              <svg class="svg-wrapper" height="100" width="100" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+                <circle class="i-wrapper-1" cx="50" cy="52" r="38" stroke="#cccccc" />
+                <circle class="i-wrapper-2" cx="-50" cy="52" r="38" stroke="url('#myGradient')" />
+              </svg>
+              <i class="fa-solid fa-info info-icon"></i>
+            </div>
+
+            <div class="categories ">
+              <div class="category">
+                <p>React</p>
+              </div>
+              <div class="category">
+                <p>wvy Original</p>
+              </div>
+              <div class="category">
+                <p>Responsive</p>
+              </div>
+              <div class="category">
+                <p>API</p>
+              </div>
+              <div class="category">
+                <p>SPA</p>
+              </div>
+
+            </div>
+
+            <button class="visit">
+              <span><a class="visitAnchor" href="https://wvys-cocktail-genie.herokuapp.com/" target="_blank" rel="noopener noreferrer"> Check it out <i class="fa-solid fa-up-right-from-square"></i> </a></span>
+            </button>
+
+          </div>
         </div>
 
         <div class="card-container">
@@ -283,7 +338,7 @@
           <h2>A bit of wavey:</h2>
 
           <div class="section ">
-            <svg id='svg1' class="svg-wrapper"  overflow="visible"
+            <svg id='svg1' class="svg-wrapper" width="100%" height="100%"  overflow="visible"
               xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="myGradient1" gradientTransform="rotate(45)">
@@ -297,7 +352,7 @@
                   <stop offset="95%" stop-color="rgba(153,27,210,1)" />
                 </linearGradient>
               </defs>
-              <rect class="svg-border"  />
+              <rect class="svg-border" width="100%" height="100%" />
               <circle class="dot" cy="40"  fill="url('#myGradient2')" />
             </svg>
             <p class="about"> wavey is just my online handle, my IRL name is Alex Barrera. I'm based in Monterrey,
@@ -305,37 +360,37 @@
           </div>
 
           <div class="section">
-            <svg id='svg2' class="svg-wrapper"  overflow="visible"
+            <svg id='svg2' class="svg-wrapper" width="100%" height="100%" overflow="visible"
               xmlns="http://www.w3.org/2000/svg">
-              <rect class="svg-border"  />
+              <rect class="svg-border" width="100%" height="100%" />
               <circle class="dot" cy="40" fill="url('#myGradient2')" />
             </svg>
             <p class="about">In my personal life I enjoy football (soccer) and support Manchester City.</p>
           </div>
           <div class="section">
-            <svg id='svg2' class="svg-wrapper"  overflow="visible"
+            <svg id='svg2' class="svg-wrapper" width="100%" height="100%" overflow="visible"
               xmlns="http://www.w3.org/2000/svg">
-              <rect class="svg-border"  />
+              <rect class="svg-border" width="100%" height="100%" />
               <circle class="dot" cy="40" fill="url('#myGradient')" />
             </svg>
             <p class="about">I like to play videogames on PC and watch Twitch streams when im not coding.</p>
           </div>
           <div class="section">
-            <svg id='svg2' class="svg-wrapper"  overflow="visible"
+            <svg id='svg2' class="svg-wrapper" width="100%" height="100%" overflow="visible"
               xmlns="http://www.w3.org/2000/svg">
-              <rect class="svg-border"  />
+              <rect class="svg-border" width="100%" height="100%" />
               <circle class="dot" cy="40" fill="url('#myGradient')" />
             </svg>
             <p class="about">To wind down I throw on some anime or read a good manga.</p>
           </div>
           <div class="section">
-            <svg id='svg2' class="svg-wrapper"  overflow="visible"
+            <svg id='svg2' class="svg-wrapper" width="100%" height="100%" overflow="visible"
               xmlns="http://www.w3.org/2000/svg">
-              <rect class="svg-border"  />
+              <rect class="svg-border" width="100%" height="100%" />
               <circle class="dot" cy="40" fill="url('#myGradient')" />
             </svg>
-            <p class="about">My favorite food is tacos. I love tacos. All the tacos.</p>
-            <p>Chicken tendies are nice too.</p>
+            <p class="about">My favorite food is tacos. I love tacos.</p>
+            
           </div>
 
         </div>

@@ -1,9 +1,13 @@
 
-$(document).ready(function(){
+$(function(){
 
-    window.onload = function () {
+    window.addEventListener('load', (event) => {
+        console.log('page is fully loaded');
         loadWindow(window.location.hash);
-    }
+      });
+
+    // window.onload = function () {
+    // }
     
     window.onhashchange = function () {
         hashChange(window.location.hash);
@@ -13,13 +17,14 @@ $(document).ready(function(){
 
 
 function loadWindow(hash){
+    console.log("yo");
 
     $(".page").not(".homePage").hide();
 
-    if (hash != "" && hash != "#home"){
+    if (hash !== "" && hash != "#home"){
         $(".homePage").css("opacity","0")
     }
-    if (hash != ""){
+    if (hash !== ""){
         $(".preloader").css("display","none");
         $("*").removeClass("loading");
         $("*").css("animation-delay",".1s");
@@ -29,13 +34,13 @@ function loadWindow(hash){
         case "":
             setTimeout(function(){
                 $(".preloader").animate({opacity: "0"},500);
-            },10000);
+            },8000);
             setTimeout(function(){
                 $("*").removeClass("loading");
-            },11500);
+            },9500);
             setTimeout(function(){
                 $(".preloader").css("display","none");
-            },13000);
+            },10000);
 
             $(".homePage").addClass("activePage");
             $(".home-nav").addClass("activeNav");
@@ -70,6 +75,8 @@ function loadWindow(hash){
 }
 
 function hashChange(hash) {
+    $(".preloader").css("display","none");
+
     $(".transitioner").animate({
         left: "0%"
     }, 1000);
